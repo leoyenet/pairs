@@ -10,8 +10,8 @@ type Pair[K, V comparable] struct {
 	Second V
 }
 
-func New[K, V comparable](p1 K, p2 V) *Pair[K, V] {
-	return &Pair[K, V]{p1, p2}
+func New[K, V comparable](p1 K, p2 V) Pair[K, V] {
+	return Pair[K, V]{p1, p2}
 }
 
 func (p *Pair[K, V]) String() string {
