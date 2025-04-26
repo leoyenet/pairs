@@ -1,4 +1,4 @@
-module pairs
+module github.com/leoyenet/pairs
 
 go 1.23.7
 
