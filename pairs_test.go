@@ -31,3 +31,9 @@ func TestSort(t *testing.T) {
 		}))
 	})
 }
+
+func TestNew(t *testing.T) {
+	first := New(1, 2)
+	second := Pair[int, int]{1, 2}
+	assert.Equal(t, first, &second, "they should be equal")
+}
